@@ -1,0 +1,19 @@
+#game {
+  min-width: 1200px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 0;
+}
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(8, 90px);
+  grid-template-rows: repeat(5, 90px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px 30px;
+}
+#game-board:focus {
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,93 @@
+.card {
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 3px solid #c99e10;
+  background-color: white;
+}
+.card img:focus {
+  outline: none !important;
+}
+
+.card img:focus-within {
+  outline: none !important;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+/* back of card - cover */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+@keyframes revealCard {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* .card.flip {
+}
+.card::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-radius: 12px;
+  border: 3px solid #c99e10;
+  transition: opacity 0.33s ease-in;
+  opacity: 1;
+  cursor: pointer;
+}
+.card.flip::after,
+.card.matched::after {
+  opacity: 0;
+}
+
+.card-content {
+  background-color: white;
+  border-radius: 12px;
+  border: 3px solid #c99e10;
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.card.matched .card-content {
+  border: 5px solid #c99e10;
+  box-shadow: 0 0 3px 3px #c99e10;
+}
+.card.flip .card-content {
+  border: 5px solid #c99e10;
+  box-shadow: 0 0 1px 1px #c99e10;
+} */
